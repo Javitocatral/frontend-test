@@ -10,12 +10,14 @@ if (heroSwiperEl) {
     breakpoints: {
       0: {
         autoplay: false,
+        allowTouchMove: false,
       },
       768: {
         autoplay: {
           delay: 4000,
           disableOnInteraction: false,
         },
+        allowTouchMove: true,
       },
     },
     navigation: {

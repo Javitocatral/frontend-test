@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'ABeeZee';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/abeezee/v23/esDR31xSG-6AGleN6tI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Graphik';
+  src: url('../assets/fonts/Graphik-Semibold-Trial.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
 html {
   font-size: 10px;
 }
@@ -90,6 +109,70 @@ body {
 .swiper-button-next {
   display: none;
 }
+.seoSection {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+.seoContent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.seoText {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.seoSubtitle {
+  font-family: 'ABeeZee', sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: #0f265c;
+  margin: 0;
+}
+.seoTitle {
+  font-family: 'Graphik', sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  color: #0f265c;
+  display: block;
+}
+.seoVideoInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.seoVideoInner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.seoVideo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.seoLogo {
+  position: absolute;
+  top: -2rem;
+  left: auto;
+  right: -2rem;
+  width: 110%;
+  height: 110%;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  z-index: 2;
+}
 @media (min-width: 1280px) {
   .heroContent {
     position: absolute;
@@ -155,5 +238,77 @@ body {
   }
   .swiper-button-next {
     left: calc(5rem + 5rem);
+  }
+  .seoSection {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    overflow: hidden;
+  }
+  .seoContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .seoSubtitle {
+    font-family: 'ABeeZee', sans-serif;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #0f265c;
+    margin: 0;
+  }
+  .seoTitle {
+    font-family: 'Graphik', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.2;
+    color: #0f265c;
+    display: block;
+  }
+  .seoText {
+    position: absolute;
+    bottom: 4rem;
+    left: 5rem;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 3;
+  }
+  .seoVideo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+  }
+  .seoVideoInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .seoVideoInner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    z-index: 1;
+  }
+  .seoLogo {
+    position: absolute;
+    top: -9rem;
+    right: -10rem;
+    left: auto;
+    width: 185%;
+    height: 120%;
+    object-fit: contain;
+    mix-blend-mode: screen;
+    z-index: 2;
   }
 }

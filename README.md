@@ -2,12 +2,15 @@
 
 ## Estructura
 
-- assets: imágenes y fuentes
-- css: estilos en LESS compilados a CSS
-- js: scripts (Swiper, interacciones)
+- assets/images, videos, fonts
+- css: LESS compilado
+- js: Swiper + WOW.js
 
-## Notas técnicas
+## Notas
 
-- Uso de REM (10px = 1rem)
-- Enfoque mobile first
-- Slider implementado con SwiperJS
+- REM (10px = 1rem), mobile first, breakpoint desktop 1280px
+
+## Decisiones
+
+- Asset imagotip Figma sin contenido exportable, se usó PNG alternativo con mix-blend-mode sobre vídeo
+- Tipografía Graphik cargada con versión Trial
