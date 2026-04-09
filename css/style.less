@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
 @font-face {
   font-family: 'Graphik';
   src: url('../assets/fonts/Graphik-Regular-Trial.otf') format('opentype');
@@ -12,9 +13,11 @@
   font-weight: 600;
   font-style: normal;
 }
+
 @white: #fff;
 @darkblue: #0f265c;
 @fontsize: 10px;
+
 html {
   font-size: @fontsize;
 }
@@ -46,7 +49,6 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: 45%;
-  display: block;
 }
 
 .heroContent {
@@ -67,7 +69,6 @@ body {
 
 .heroTitle p,
 .heroTitle strong {
-  font-family: 'Graphik', sans-serif;
   font-size: 4.4rem;
   line-height: 1.1;
   margin: 0;
@@ -80,7 +81,6 @@ body {
 
 .heroInfo {
   color: @white;
-  font-family: 'Graphik', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
@@ -93,7 +93,6 @@ body {
 }
 
 .heroBtn {
-  font-family: 'Graphik', sans-serif;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -121,7 +120,9 @@ body {
 .swiper-button-next {
   display: none;
 }
+
 // SEO
+
 .seoSection {
   position: relative;
   width: 100%;
@@ -153,7 +154,6 @@ body {
 }
 
 .seoTitle {
-  font-family: 'Graphik', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.2;
@@ -174,7 +174,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
 .seoVideo {
@@ -186,7 +185,6 @@ body {
 .seoLogo {
   position: absolute;
   top: -2rem;
-  left: auto;
   right: -2rem;
   width: 110%;
   height: 110%;
@@ -271,9 +269,10 @@ body {
   .swiper-button-next {
     left: ~'calc(5rem + 5rem)';
   }
+
   // SEO
+
   .seoSection {
-    position: relative;
     width: 100%;
     height: 100vh;
     background: @white;
@@ -281,7 +280,6 @@ body {
   }
 
   .seoContent {
-    position: relative;
     width: 100%;
     height: 100%;
   }
@@ -296,7 +294,6 @@ body {
   }
 
   .seoTitle {
-    font-family: 'Graphik', sans-serif;
     font-weight: 600;
     font-size: 4rem;
     line-height: 1.2;
@@ -324,20 +321,7 @@ body {
     z-index: 1;
   }
 
-  .seoVideoInner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-  }
-
   .seoVideoInner video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
     z-index: 1;
   }
 
@@ -345,7 +329,6 @@ body {
     position: absolute;
     top: -9rem;
     right: -10rem;
-    left: auto;
     width: 185%;
     height: 120%;
     object-fit: contain;
