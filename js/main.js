@@ -1,18 +1,26 @@
-const hero = document.querySelector('.mdlhero .swiper')
+const heroSwiperEl = document.querySelector('.heroSection .heroSwiper')
 
-if (hero && hero.querySelectorAll('.swiper-slide').length > 1) {
-  new Swiper(hero, {
+if (heroSwiperEl) {
+  const swiper = new Swiper(heroSwiperEl, {
     loop: true,
     autoplay: {
-      delay: 3000,
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      0: {
+        autoplay: false,
+      },
+      768: {
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      },
     },
     navigation: {
-      nextEl: '.mdlhero .swiper-button-next',
-      prevEl: '.mdlhero .swiper-button-prev',
-    },
-    pagination: {
-      el: '.mdlhero .swiper-pagination',
-      clickable: true,
+      nextEl: heroSwiperEl.querySelector('.swiper-button-next'),
+      prevEl: heroSwiperEl.querySelector('.swiper-button-prev'),
     },
   })
 }
